@@ -63,7 +63,11 @@ switch(bulan){
   case 10: x = "Oktober"; break;
   case 11: x = "November"; break;
   case 12: x = "Desember"; break;
-  default: x = "-";
+  default: x = "err";
 }
 
-console.log(tanggal, x, tahun);
+if(x === "err") {
+  console.log("format bulan salah")
+} else {
+  console.log(tanggal, x, tahun);
+}
